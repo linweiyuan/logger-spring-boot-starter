@@ -1,0 +1,8 @@
+package com.linweiyuan.loggerspringbootstarter.configuration
+
+import org.springframework.boot.context.properties.EnableConfigurationProperties
+import org.springframework.context.annotation.Configuration
+
+@EnableConfigurationProperties(ExceptionLogConfigurationProperties::class)
+@Configuration
+class LoggerAutoConfiguration

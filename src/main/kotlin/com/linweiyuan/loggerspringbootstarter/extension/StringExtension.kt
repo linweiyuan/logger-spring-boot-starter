@@ -7,7 +7,7 @@ import java.awt.Color
 
 fun String.toColor(backgroundColor: Boolean = false): String {
     if (!StringUtils.hasText(this)) {
-        return Constant.COLOR_EMPTY
+        return Constant.EMPTY
     }
 
     with(Color.decode(this)) {

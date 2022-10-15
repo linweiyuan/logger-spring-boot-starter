@@ -5,8 +5,8 @@ import com.linweiyuan.loggerspringbootstarter.enum.ColorEnum
 import com.linweiyuan.loggerspringbootstarter.extension.toColor
 
 open class Log {
-    var color = Constant.COLOR_EMPTY
-    var backgroundColor = Constant.COLOR_EMPTY
+    var color = Constant.EMPTY
+    var backgroundColor = Constant.EMPTY
 
     var blink: Boolean = false
 

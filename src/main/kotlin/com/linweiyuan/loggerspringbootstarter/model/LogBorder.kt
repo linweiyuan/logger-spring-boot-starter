@@ -6,7 +6,7 @@ import com.linweiyuan.loggerspringbootstarter.enum.ColorEnum
 import com.linweiyuan.loggerspringbootstarter.extension.toColor
 
 class LogBorder : Log() {
-    var emptySpaceBackgroundColor = Constant.COLOR_EMPTY
+    var emptySpaceBackgroundColor = Constant.EMPTY
     lateinit var logContentList: List<LogContent>
 
     private fun getHorizontalLine(maxLength: Int) = BorderEnum.HORIZONTAL.value.repeat(maxLength + 2)

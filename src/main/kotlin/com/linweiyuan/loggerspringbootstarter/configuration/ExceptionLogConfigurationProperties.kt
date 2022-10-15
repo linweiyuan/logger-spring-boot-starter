@@ -9,24 +9,24 @@ import java.util.regex.Pattern
 @Configuration
 @ConfigurationProperties(prefix = "linweiyuan.logger.exception")
 class ExceptionLogConfigurationProperties {
-    var borderColor = Constant.COLOR_EMPTY
+    var borderColor = Constant.EMPTY
         set(value) {
             checkColorFormat(value)
             field = value
         }
-    var borderBackgroundColor = Constant.COLOR_EMPTY
+    var borderBackgroundColor = Constant.EMPTY
         set(value) {
             checkColorFormat(value)
             field = value
         }
     var borderBlink = false
 
-    var textColor = Constant.COLOR_EMPTY
+    var textColor = Constant.EMPTY
         set(value) {
             checkColorFormat(value)
             field = value
         }
-    var textBackgroundColor = Constant.COLOR_EMPTY
+    var textBackgroundColor = Constant.EMPTY
         set(value) {
             checkColorFormat(value)
             field = value
@@ -35,7 +35,7 @@ class ExceptionLogConfigurationProperties {
     var textItalic = false
     var textBlink = false
 
-    var emptySpaceBackgroundColor = Constant.COLOR_EMPTY
+    var emptySpaceBackgroundColor = Constant.EMPTY
         set(value) {
             checkColorFormat(value)
             field = value

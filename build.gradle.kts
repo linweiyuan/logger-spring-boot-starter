@@ -1,10 +1,16 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    id("org.springframework.boot") version "2.7.4"
-    id("io.spring.dependency-management") version "1.0.14.RELEASE"
-    kotlin("jvm") version "1.7.20"
-    kotlin("plugin.spring") version "1.7.20"
+    val springBootVersion = "2.7.4"
+    val springDependencyManagementVersion = "1.0.14.RELEASE"
+    val kotlinVersion = "1.7.20"
+
+    id("org.springframework.boot") version springBootVersion
+    id("io.spring.dependency-management") version springDependencyManagementVersion
+    kotlin("jvm") version kotlinVersion
+    kotlin("plugin.spring") version kotlinVersion
+    kotlin("kapt") version kotlinVersion
+
     `maven-publish`
 }
 
@@ -23,7 +29,7 @@ repositories {
 }
 
 dependencies {
-    annotationProcessor("org.springframework.boot:spring-boot-configuration-processor")
+    kapt("org.springframework.boot:spring-boot-configuration-processor")
     implementation("org.springframework.boot:spring-boot-starter-aop")
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")

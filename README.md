@@ -11,7 +11,6 @@
 ### 2. Dependency
 
 ```xml
-
 <dependency>
     <groupId>com.linweiyuan</groupId>
     <artifactId>logger-spring-boot-starter</artifactId>

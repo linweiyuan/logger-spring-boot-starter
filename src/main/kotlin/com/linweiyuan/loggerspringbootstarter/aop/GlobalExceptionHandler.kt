@@ -38,7 +38,7 @@ class GlobalExceptionHandler {
         val stackTraceList = exception.stackTrace
             .map { it.toString() }
             .filter { if (enableExceptionLogAnnotation.showAll) true else it.contains(applicationBean.packageName) }
-            .toMutableList() //
+            .toMutableList()
             .apply { add(0, exception.toString()) }
 
         val exceptionLog = getExceptionLog(stackTraceList, enableExceptionLogAnnotation)

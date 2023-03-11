@@ -6,13 +6,13 @@ import com.linweiyuan.loggerspringbootstarter.annotation.EnableExceptionLog
 import com.linweiyuan.loggerspringbootstarter.configuration.ExceptionLogConfigurationProperties
 import com.linweiyuan.loggerspringbootstarter.model.LogBorder
 import com.linweiyuan.loggerspringbootstarter.model.LogContent
+import jakarta.annotation.Resource
 import org.springframework.beans.factory.getBeansWithAnnotation
 import org.springframework.context.ApplicationContext
 import org.springframework.util.ClassUtils
 import org.springframework.web.bind.annotation.ExceptionHandler
 import org.springframework.web.bind.annotation.RestControllerAdvice
 import java.util.logging.Logger
-import javax.annotation.Resource
 
 @RestControllerAdvice
 class GlobalExceptionHandler {

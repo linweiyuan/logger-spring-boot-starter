@@ -1,9 +1,9 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    val springBootVersion = "2.7.4"
-    val springDependencyManagementVersion = "1.0.14.RELEASE"
-    val kotlinVersion = "1.7.20"
+    val springBootVersion = "3.0.4"
+    val springDependencyManagementVersion = "1.1.0"
+    val kotlinVersion = "1.8.0"
 
     id("org.springframework.boot") version springBootVersion
     id("io.spring.dependency-management") version springDependencyManagementVersion
@@ -15,7 +15,7 @@ plugins {
 }
 
 group = "com.linweiyuan"
-version = "0.1.0"
+version = "1.0.0"
 java.sourceCompatibility = JavaVersion.VERSION_17
 
 configurations {

@@ -77,7 +77,7 @@ class DynamicMethodInterceptor(private val objectMapper: ObjectMapper) : MethodI
             apiLogList.addAll(responseLogList)
 
             // default 2xx, 4xx, 5xx text color mapping
-            when (response.statusCodeValue.toString()[0]) {
+            when (response.statusCode.toString()[0]) {
                 '2' -> Constant.COLOR_GREEN
                 '4' -> Constant.COLOR_YELLOW
                 '5' -> Constant.COLOR_RED

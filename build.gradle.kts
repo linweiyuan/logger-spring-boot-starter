@@ -1,9 +1,9 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    val springBootVersion = "3.0.4"
+    val springBootVersion = "3.0.5"
     val springDependencyManagementVersion = "1.1.0"
-    val kotlinVersion = "1.8.0"
+    val kotlinVersion = "1.8.20"
 
     id("org.springframework.boot") version springBootVersion
     id("io.spring.dependency-management") version springDependencyManagementVersion
@@ -50,6 +50,10 @@ tasks.withType<KotlinCompile> {
  */
 tasks.named<Jar>("jar") {
     archiveClassifier.set("")
+}
+
+tasks.bootJar {
+    enabled = false
 }
 
 publishing {
